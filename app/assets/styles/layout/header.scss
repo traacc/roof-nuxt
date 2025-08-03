@@ -1,0 +1,81 @@
+
+.header-wrapper {
+    background-color: darkblue;
+    color: #fff;
+}
+header.header {
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2.3em;
+        .header__left {
+            display: flex;
+            align-items: center;
+            
+            column-gap: 4.3em;
+            .header__nav {
+                display: flex;
+                column-gap: 2.5em;
+                font-size: 1.1rem;
+            }
+        }
+        .header__right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 1.7em;
+
+            .header__call-time {
+                display: flex;
+                align-items: center;
+                column-gap: 1em;
+                font-size: 0.7rem;
+                column-gap: 0.86em;
+                .icon {
+                    border-radius: 100%;
+                    background-color: #25D366;
+
+                    width: 45px;
+                    height: 45px;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .text {
+                    max-width: 104px;
+                }
+            }
+            .header__phone {
+                .header__phone-info {
+                    padding-left: 1.5em;
+                    font-size: 0.8rem;
+                    position: relative;
+                    &::before {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        width: 10px;
+                        height: 10px;
+
+                        top: 0.3em;
+                        left: 0;
+
+                        background-color: #25D366;
+
+                        border-radius: 100%;
+                    }
+                    .value {
+                        font-weight: 500;
+                    }
+                }
+                .header__phone-num {
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                    margin-top: 0.3em;
+                }
+            }
+        }
+    }
+}

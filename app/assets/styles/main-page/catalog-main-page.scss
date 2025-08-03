@@ -1,0 +1,146 @@
+.catalog-main {
+    .catalog-main__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-top: 3.4em;
+        .catalog-main__title {
+            font-size: 2.5rem;
+            
+            h2 {
+                font-size: 2.5rem;
+                font-weight: 400;
+                .red {
+                    color: #D42020;
+                }
+                .gray {
+                    opacity: .4;
+                }
+            }
+
+        }
+    }
+
+
+    .catalog-main__cats{
+        .catalog-main__cat {
+            color: #9FA9C2;
+            padding: 10px 17px 10px 13px;
+
+            border-radius: 10px;
+            &.active {
+                background-color: #193370;
+                color: #fff;
+            }
+        }
+        
+    }
+    .catalog-main__advs {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+        .catalog-main__adv {
+            display: flex;
+            column-gap: .5em;
+            .pic {
+                background-color: #D42020;
+                border-radius: 10px;
+                width: 54px;
+                height: 54px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+        }
+    }
+    .catalog-main__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 2em;
+        .catalog-main__item {
+            background-image: url(~/assets/images/catalog/catalog_wrapper.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            .catalog-main__img {
+                position: relative;
+                .catalog-main__item-header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    position: absolute;
+                    top: 1em;
+                    left: 0;
+                    width: 100%;
+                    padding-left: 1em;
+                    padding-right: 1em;
+
+                    color: #fff;
+
+                    .catalog-main__title {
+                        font-weight: 500;
+                        font-size: .9rem;
+                    }
+                    .catalog-main__stock {
+                        font-size: .8rem;
+                        padding: 8px 18px;
+                        background-color: #25D366;
+                        border-radius: 10px;
+                    }
+                }
+                .catalog-main__item-gallery {
+                    img {
+                        width: 100%;
+                    }
+                }
+                
+            }
+            .catalog-main__info {
+                padding: 0.7em 0.7em 0.3em 1.4em;
+                .catalog-main__desc {
+                    font-size: 0.7rem;
+                    color: #9fa9c2;
+                }
+                .catalog-main__attribs {
+                    margin-top: 0.9em;
+                }
+                .catalog-main__attrib {
+                    display: flex;
+                    font-size: 0.8rem;
+                    margin-bottom: 0.6em;
+                    .value {
+                        font-weight: 500;
+                        margin-left: 0.3em;
+                        span {
+                            font-size: 0.5rem;
+                            padding: 4px 10px;
+                            border: 1px solid #E8EEFF;
+                            border-radius: 5px;
+
+                            margin-right: .5em;
+                        }
+                    }
+                }
+                .catalog-main__footer {
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    padding-top: 3em;
+                    .catalog-main__price {
+                        font-weight: 500;
+                    }
+                    .catalog-main__btn-calc {
+                        border-radius: 50px;
+                        padding: 15px 70px;
+                        font-size: 0.6rem;
+                        background-image: url(~/assets/images/icon/calc.svg);
+                        background-repeat: no-repeat;
+                        background-position: 21% 44%;
+                    }
+                }
+            }
+        }
+
+    }
+}

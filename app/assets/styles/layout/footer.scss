@@ -1,0 +1,113 @@
+.footer {
+    background-color: #193370;
+    color: #fff;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    
+    .inner {
+        padding-top: 3em;
+    }
+    .footer__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 3em;
+        .footer__logo {
+            font-size: 0.8rem;
+            color: rgba($color: #fff, $alpha: .6);
+            .footer__copyright {
+                margin-top: 1.4em;
+            }
+        }
+        .footer__nav {
+            font-size: 1.1rem;
+            display: flex;
+            column-gap: 1em;
+        }
+        .footer__contacts{
+            .footer__phone {
+                &-info {
+                    padding-left: 1.5em;
+                    font-size: 0.8rem;
+                    position: relative;
+                    &::before {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        width: 10px;
+                        height: 10px;
+
+                        top: 0.3em;
+                        left: 0;
+
+                        background-color: #25D366;
+
+                        border-radius: 100%;
+                    }
+                    .value {
+                        font-weight: 500;
+                    }
+                }
+                &-num {
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                    margin-top: 0.3em;
+
+                    position: relative;
+                    background-image: url(~/assets/images/icon/phone.svg);
+                    padding-left: 1.2em;
+                    background-position: left center;
+
+                    background-repeat: no-repeat;
+                }
+            }
+            .footer__email {
+                &-info {
+                    padding-left: 1.5em;
+                    font-size: 0.8rem;
+                    position: relative;
+                    &::before {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        width: 10px;
+                        height: 10px;
+
+                        top: 0.3em;
+                        left: 0;
+
+                        background-color: #25D366;
+
+                        border-radius: 100%;
+                    }
+                    .value {
+                        font-weight: 500;
+                    }
+                }
+                &-num {
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                    margin-top: 0.3em;
+
+                    background-image: url(~/assets/images/icon/email.svg);
+                    padding-left: 1.2em;
+                    background-position: left center;
+
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+    .footer__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 3em;
+        padding-bottom: 3em;
+
+        font-size: 0.7rem;
+        color: rgba($color: #fff, $alpha: .6);
+        text-align: center;
+
+        border-top: 1px solid rgba($color: #FFFFFF, $alpha: .2);
+    }
+}

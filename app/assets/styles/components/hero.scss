@@ -1,0 +1,85 @@
+.header-wrapper {
+    background-image: url(~/assets/images/hero/hero_main_1.png);
+
+    &--simple {
+        background-image: url(~/assets/images/hero/hero_simple.png);
+    }
+}
+.hero {
+    
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-top: 7.1em;
+        padding-bottom: 2.9em;
+        .hero__content {
+            margin-bottom: 7.3em;
+            .hero__title {
+                font-size: 2.5rem;
+                line-height: 1.22;
+                margin-bottom: 0.6em;
+            }
+            .hero__breadcrumbs {
+                font-size: 1.25rem;
+                display: flex;
+                column-gap: 1em;
+                .breadcrumbs-item {
+                    position: relative;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        height: 10px;
+                        width: 8px;
+                        background-image: url(~/assets/images/hero/breadcrumbs_sep.svg);
+                        background-repeat: no-repeat;
+                        top: 8px;
+                        left: -15px;
+                    }
+                    &:first-child {
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .hero__advs {
+            display: flex;
+            
+            .hero__adv {
+                display: flex;
+                align-items: center;
+                column-gap: 1em;
+                .text {
+                    max-width: 260px;
+                }
+            }
+        }
+    }
+    .hero__categories {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: -143px;
+            left: -95px;
+            width: 428px;
+            height: 428px;
+
+            border-radius: 100%;
+            border: 1px solid rgba($color: #fff, $alpha: .1);
+        }
+        .item {
+            display: block;
+
+            
+            border-radius: 10px;
+            padding: 18px 68px 14px 18px;
+            &.active {
+                background-color: rgba($color: #193370, $alpha: .6);  
+            }
+        }
+    }
+}
