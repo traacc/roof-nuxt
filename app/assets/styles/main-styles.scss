@@ -79,3 +79,23 @@ h1,h2,h3,h4,h5,h6 {
     color: rgba($color: #193370, $alpha: .4);
   }
 }
+.p-galleria {
+  border: none;
+  border-style: none;
+}
+li.p-galleria-indicator {
+  width: 28px;
+  height: 2px;
+  background-color: rgba($color: #fff, $alpha: 0.4);
+  border-radius: 10px;
+  &-active {
+    background-color: rgba($color: #fff, $alpha: 1);
+  }
+}
+.p-galleria-indicator-list {
+  --p-galleria-indicator-list-gap: 0.5em;
+  cursor: pointer;
+  position: relative;
+  bottom: 1em;
+  gap: 0.5em;
+}

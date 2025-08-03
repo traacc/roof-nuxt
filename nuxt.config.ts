@@ -7,6 +7,6 @@ export default defineNuxtConfig({
       '@primevue/nuxt-module'
   ],
   app: {
-      baseURL: '/roof'
+      baseURL: '/roof-nuxt'
   }
 })

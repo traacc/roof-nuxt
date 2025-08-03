@@ -39,41 +39,13 @@
                 </div>
             </div>
             <div class="catalog-main__list">
-                <div class="catalog-main__item">
-                    <div class="catalog-main__img">
-                        <div class="catalog-main__item-header">
-                            <h3 class="catalog-main__title">Профнастил HC35</h3>
-                            <div class="catalog-main__stock">В наличии</div>
-                        </div>
-                        <div class="catalog-main__item-gallery">
-                            
-                            <img src="~/assets/images/catalog/item_img_1.png" alt=""></img>
-                        </div>
-                        
-                    </div>
-                    <div class="catalog-main__info">
-                        <div class="catalog-main__desc">Многоцелевой и практичный материал с одинаковым с обеих сторон профилем. Маркировка НС значит, что профлист является и «несущим», и «стеновым». </div>
-                        <div class="catalog-main__attribs">
-                            <div class="catalog-main__attrib">
-                                <div class="label">Толщина (мм):</div>
-                                <div class="value"><span>0,35</span><span>0,40</span><span>0,45</span><span>0,50</span></div>
-                            </div>
-                            <div class="catalog-main__attrib">
-                                <div class="label">Ширина полная:</div>
-                                <div class="value">1113 мм</div>
-                            </div>
-                            <div class="catalog-main__attrib">
-                                <div class="label">Ширина рабочая:</div>
-                                <div class="value">1200 мм</div>
-                            </div>
-                        </div>
-                        <div class="catalog-main__footer">
-                            <div class="catalog-main__price">от 555р/м²</div>
-                            <button class="catalog-main__btn-calc btn">Рассчитать заказ</button>
-                        </div>
-                        
-                    </div>
-                </div>
+                <catalog-main-card></catalog-main-card>
+                <catalog-main-card></catalog-main-card>
+                <catalog-main-card></catalog-main-card>
+                <catalog-main-card></catalog-main-card>
+                <catalog-main-card></catalog-main-card>
+                <catalog-main-card></catalog-main-card>
+                
             </div>
         </div>
     </div>
@@ -236,3 +208,6 @@
         </div>
     </section>
 </template>
+<script>
+
+</script>

@@ -7,9 +7,9 @@
                         <div class="header__logo"><a href="/"><img src="~/assets/images/header/logo.svg" alt=""></a></div>
                         <nav class="header__nav">
                             <a href="#" class="nav__item">Заборы</a>
-                            <a href="#" class="nav__item">Каталог</a>
-                            <a href="#" class="nav__item">О компании</a>
-                            <a href="#" class="nav__item">Контакты</a>
+                            <a href="catalog" class="nav__item">Каталог</a>
+                            <a href="about" class="nav__item">О компании</a>
+                            <a href="contacts" class="nav__item">Контакты</a>
                         </nav>
                     </div>
                     <div class="header__right">
@@ -40,9 +40,9 @@
                         <div class="hero__content">
                             <div class="hero__breadcrumbs">
                                 <a href="/" class="breadcrumbs-item">Главная</a>
-                                <a href="#" class="breadcrumbs-item">Контакты</a>
+                                <a href="#" class="breadcrumbs-item">{{ pageTitle }}</a>
                             </div>
-                            <h2 class="hero__title">Контакты</h2>
+                            <h2 class="hero__title">{{ pageTitle }}</h2>
                         </div>
                     </div>
                 </div>
@@ -60,9 +60,9 @@
                     </div>
                     <div class="footer__nav">
                             <a href="#" class="nav__item">Заборы</a>
-                            <a href="#" class="nav__item">Каталог</a>
-                            <a href="#" class="nav__item">О компании</a>
-                            <a href="#" class="nav__item">Контакты</a>
+                            <a href="catalog" class="nav__item">Каталог</a>
+                            <a href="about" class="nav__item">О компании</a>
+                            <a href="contacts" class="nav__item">Контакты</a>
                     </div>
                     <div class="footer__contacts">
                         <div class="footer__phone">
@@ -92,3 +92,7 @@
         </div>
     </footer>
 </template>
+
+<script setup>
+const pageTitle = useState('pageTitle')
+</script>

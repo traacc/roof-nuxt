@@ -63,5 +63,6 @@
 <script setup lang="ts">
 definePageMeta({
   layout: 'simple-page'
-})
+});
+const pageTitle = useState('pageTitle', () => 'Контакты');
 </script>

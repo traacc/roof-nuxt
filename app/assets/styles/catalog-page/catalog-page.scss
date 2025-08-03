@@ -1,0 +1,78 @@
+.catalog-page {
+    margin-top: 4em;
+    margin-bottom: 4em;
+    .catalog-page__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 2em;
+        gap: 1.25em;
+        .catalog-page__item {
+            background-color: #fff;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            border-radius: 30px;
+            .catalog-page__img {
+                position: relative;
+                .catalog-page__item-header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    position: absolute;
+                    top: 1em;
+                    left: 0;
+                    width: 100%;
+                    padding-left: 1em;
+                    padding-right: 1em;
+
+                    color: #fff;
+
+                    .catalog-page__title {
+                        font-weight: 500;
+                        font-size: .9rem;
+                    }
+                    .catalog-page__stock {
+                        font-size: .8rem;
+                        padding: 8px 18px;
+                        background-color: #25D366;
+                        border-radius: 10px;
+                    }
+                }
+                .catalog-page__item-gallery {
+                    img {
+                        width: 100%;
+                    }
+                }
+                
+            }
+            .catalog-page__info {
+                padding: 0.7em 0.7em 1em 1.4em;
+                .catalog-page__desc {
+                    font-size: 0.7rem;
+                    color: #9fa9c2;
+                }
+                .catalog-page__footer {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    
+                    padding-top: 1em;
+                    .catalog-page__price {
+                        font-weight: 500;
+                    }
+                    .catalog-page__btn-calc {
+                        border-radius: 100%;
+                        padding: 0;
+                        background-color: #D42020;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 38px;
+                        height: 38px;
+                    }
+                }
+            }
+        }
+
+    }
+}

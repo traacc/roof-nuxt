@@ -59,6 +59,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin-top: 2em;
+        gap: 1.25em;
         .catalog-main__item {
             background-image: url(~/assets/images/catalog/catalog_wrapper.svg);
             background-repeat: no-repeat;
