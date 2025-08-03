@@ -57,11 +57,11 @@
 </template>
 <script>
 import Galleria from 'primevue/galleria';
-import img1 from '~/assets/images/catalog/item_img_1.png';
-import img2 from '~/assets/images/catalog/item_img_2.png';
-import img3 from '~/assets/images/catalog/item_img_3.png';
-import img4 from '~/assets/images/catalog/item_img_4.png';
-import img5 from '~/assets/images/catalog/item_img_5.png';
+import img1 from '@/assets/images/catalog/item_img_1.png';
+import img2 from '@/assets/images/catalog/item_img_2.png';
+import img3 from '@/assets/images/catalog/item_img_3.png';
+import img4 from '@/assets/images/catalog/item_img_4.png';
+import img5 from '@/assets/images/catalog/item_img_5.png';
 
 export default {
   name: 'GalleriaExample',

@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="inner">
                     <div class="header__left">
-                        <div class="header__logo"><a href="~/"><img src="~/assets/images/header/logo.svg" alt=""></a></div>
+                        <div class="header__logo"><a href="/"><img src="~/assets/images/header/logo.svg" alt=""></a></div>
                         <nav class="header__nav">
                             <a href="#" class="nav__item">Заборы</a>
                             <a href="catalog" class="nav__item">Каталог</a>
