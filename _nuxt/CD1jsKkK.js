@@ -1,0 +1,1 @@
+import t from"./CDWvOvex.js";import"./DZjb6QMM.js";import"./myrW4_WW.js";import"./BqKDAv6F.js";import"./BCwFzHqr.js";import"./BC0PgWsE.js";import"./ZhWAdK_X.js";var a={name:"Chips",extends:t,mounted:function(){console.warn("Deprecated since v4. Use InputChips component instead.")}};export{a as default};
